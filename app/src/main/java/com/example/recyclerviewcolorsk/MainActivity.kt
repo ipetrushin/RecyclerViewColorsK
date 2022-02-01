@@ -17,5 +17,6 @@ class MainActivity : AppCompatActivity() {
         val lv = findViewById<ListView>(R.id.list)
         val adapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, list)
         lv.adapter = adapter
+
     }
 }
