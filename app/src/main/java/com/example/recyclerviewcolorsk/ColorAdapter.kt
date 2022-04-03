@@ -9,10 +9,9 @@ import androidx.recyclerview.widget.ListAdapter
 
 
 internal class ColorAdapter(private val inflater: LayoutInflater) :
-    // DIFF_CALLBACK сравнивает элементы списка
+
     ListAdapter<Int, ColorViewHolder>(DIFF_CALLBACK) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ColorViewHolder {
-        // создаём новый View с использованием отдельной разметки (может быть динамической)
         val row: View = inflater.inflate(R.layout.item, parent, false)
         return ColorViewHolder(row)
     }
